@@ -34,18 +34,33 @@ and open the template in the editor.
                         echo 'html';
                         break;
                 }
+                echo '<br>';
+                $arreglo = array("HOla",1,"hola");
+                //echo $arreglo[2] . "<br>" . $arreglo[0];
                 //Arreglos
-                
                 //echo $SegundaVariable;
             ?>
         </h1>
-        <p>
-            <h2>
+        <pre>
+            <h3>
                 <?PHP
-                    echo 'Esta es otra sección';
+                    $dato = array_pop($arreglo);
+                    $arreglo = array("HOla",1,"hola");
+                  
+                    //Arreglos asociativos
+                    $usuarios = array('nombre' => "Juan",
+                        "Apellido" => "zabala", "Cedula" => 1234);
+                    echo "<h1>" . $usuarios['nombre'] . "</h1>";
+                    echo 'hola' . "<br>" . "comer" . "<br>";
+                    $existe = in_array('Juan', array_values($usuarios));
+                    var_dump($existe);
+                    //foreach
+                    foreach ($usuarios as $user){
+                        echo $user . "<br>";
+                    }
                 ?>
-            </h2>
-        </p>
+            </h3>
+        </pre>
         
     </body>
 </html>
