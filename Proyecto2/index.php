@@ -55,10 +55,27 @@ and open the template in the editor.
                     $existe = in_array('Juan', array_values($usuarios));
                     var_dump($existe);
                     //foreach
-                    foreach ($usuarios as $user){
-                        echo $user . "<br>";
-                    }
+                    
                 ?>
+                <ul>
+                    <?PHP
+                        foreach ($usuarios as $key => $user){
+                            echo "<li>" . $key . " " .$user . "</li>";
+                        }
+                        for($i = 0; $i<4; $i++){
+                            echo $i;
+                        }
+                        echo '<br>';
+                        $cont = 0;
+                        while($cont<5){
+                            echo $cont;
+                            if($cont==3){
+                                break;
+                            }
+                            $cont++;
+                        }
+                    ?>
+                </ul>
             </h3>
         </pre>
         
