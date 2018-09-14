@@ -1,2 +1,0 @@
-# CursoCesde
-Desarrollo Web
