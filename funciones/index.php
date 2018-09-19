@@ -44,6 +44,7 @@ and open the template in the editor.
                     $agenda[] = $tel;
                 }
                 agendar("Felipe",12345);
+                $agenda[] = "camilo";
                 print_r($agenda);
             // put your code here
             ?>
