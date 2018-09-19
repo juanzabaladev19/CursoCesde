@@ -28,7 +28,23 @@ and open the template in the editor.
                 echo "<br>";
                 $usuarios = ["juan","felipe","alejandro"];
                 usuario($usuarios,12345);
-                
+                echo "<br>";
+                function suma($num1, $num2){
+                    //$sumar = $num1 + $num2;
+                    //return $sumar;
+                    return $num1+$num2;
+                }
+                $result = suma(2,4);
+                echo "Suma: " . $result . "<br>";
+                //acceder a variables globales desde función
+                $agenda = array();
+                function agendar($nombre,$tel){
+                    global $agenda;//accedo a la variable global agenda
+                    $agenda[] = $nombre;
+                    $agenda[] = $tel;
+                }
+                agendar("Felipe",12345);
+                print_r($agenda);
             // put your code here
             ?>
         </h1>
