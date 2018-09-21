@@ -9,11 +9,18 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title></title>
     </head>
+   
     <body>
         <form action="registro.php" method="get">
-            <label>Nombre</label>
-            <input type="text" name="nombre" placeholder="nombre">
+            <label id="label">Nombre</label>
+            <h2 id="h2">Hola</h2>
+            <input type="text" name="nombre" placeholder="nombre" id="nombre">
             <br><br>
+            <script>
+                var x = document.getElementById("label");
+                x.innerHTML="Comer";
+                console.log(x);
+            </script>
             <label>Apellido</label>
             <input type="text" name="apellido" placeholder="apellido">
             <br><br>
