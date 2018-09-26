@@ -10,27 +10,17 @@ and open the template in the editor.
 .barra-nav{
     background: black;
 }
-.style-footer{
-    background: linear-gradient(#512DA8,#607D8B);
-    text-align: center;
-}
-.registro{
-    text-align: center;
-}
-.contenedor{
-    margin-top: 20px;
-    width: 50%;
-}
-.logo-registro{
-    box-shadow: 5px 5px #BDBDBD;
-    border-radius: 30px;
-    width: 20%;
-}
-.btn-enviar{
-    background: #512DA8;
-}
+
 .img-logo{
     width: 30%;
 }
-
-
+.btn-registro{
+    background: black;
+    color: white;
+    margin-left: 5px;
+}
+.btn-iniciar{
+    background: black;
+    color: white;
+    
+}

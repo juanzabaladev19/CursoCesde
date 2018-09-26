@@ -22,10 +22,15 @@ and open the template in the editor.
               <a class="navbar-brand" href="index.php">
                   <img class="img-logo" src="img/logo-ropa.jpg" class="d-inline-block align-top" alt="">
               </a>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <a href="#"type="button" class="btn-iniciar">Iniciar Sesion</a>
+                    <a href="registro.php" class="btn-registro">Registro</a>
+              </form>
             </nav>
         </header>
         <section>
-            
+            <a href="registro.php">click me</a>
         </section>
         <footer>
             
