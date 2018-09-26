@@ -1,5 +1,5 @@
 <?php
-    //Validando multiples checkbox
+    //Validando Select
     $resultado = $_POST;
     $nombre = $resultado['nombre'];
     //$check = $resultado['tipo'];

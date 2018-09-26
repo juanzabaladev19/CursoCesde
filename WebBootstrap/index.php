@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -28,8 +29,7 @@ and open the template in the editor.
                 <div class="registro">
                     <img class="img-responsive logo-registro" src="img/registro.png" alt="">
                 </div>
-                
-                <form class="my-5">
+                <form class="my-5" action="registro.php" method="post">
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
