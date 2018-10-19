@@ -9,4 +9,9 @@ and open the template in the editor.
 */
 .contenedor-registro{
     text-align: center;
+    width: 50%;
+}
+.logo-registro{
+    width: 25%;
+    heigth: 25%;
 }

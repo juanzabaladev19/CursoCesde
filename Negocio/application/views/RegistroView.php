@@ -3,12 +3,12 @@
         <div class="registro">
             <img class="img-responsive logo-registro" src="<?php echo base_url();?>assets/img/registro.png" alt="">
         </div>
-        <form class="my-5" action="validarRegistro.php" method="post">
+        <form class="my-5" action="<?php echo base_url();?>/Registro/InsertUser" method="post" onsubmit="return datosUser();">
             <div class="row">
                 <div class="col">
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" required>
                         <small id="nombreHelp" class="form-text text-muted">Sus datos nunca serán compartidos.</small>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
               <label class="form-check-label" for="terminos">Términos y condiciones</label>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-enviar">Completar Registro</button>
+            <input type="submit" class="btn btn-primary btn-enviar" value="Completar Registro">
         </form>
     </div>
 </section>

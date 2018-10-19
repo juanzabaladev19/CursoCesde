@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/normalize.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/estilosIndex.css">
+        <script src="<?php echo base_url();?>assets/js/validacion.js"></script>
         <title>Document</title>
     </head>
     <body>
