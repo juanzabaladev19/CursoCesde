@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax simple</title>
+</head>
+<body>
+    <button onclick="sendRequest();">
+        Send Ajax request
+    </button>  
+    <script>
+        function sendRequest(){
+            var theObject = new XMLHttpRequest();
+            //Vamos a pedir algo a esta dirección de internet
+            theObject.open('GET','backend.php', true);
+            //Se envía la petición
+            theObject.send();
+        }
+    </script>  
+</body>
+</html>
