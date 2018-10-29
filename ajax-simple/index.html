@@ -9,14 +9,21 @@
 <body>
     <button onclick="sendRequest();">
         Send Ajax request
-    </button>  
+    </button>
+    <h1 id="title"></h1>
     <script>
         function sendRequest(){
             var theObject = new XMLHttpRequest();
             //Vamos a pedir algo a esta dirección de internet
-            theObject.open('GET','backend.php', true);
+            theObject.open('POST','backend.php', true);
+            //Que tipo de contenido voy a solicitar
+            theObject.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             //Se envía la petición
-            theObject.send();
+            theObject.onreadystatechange = function(){
+                //Obtiene la respuesta y la pone en un elemento en específico
+                document.getElementById('title').innerHTML = theObject.responseText;
+            }
+            theObject.send('username = Fast');
         }
     </script>  
 </body>

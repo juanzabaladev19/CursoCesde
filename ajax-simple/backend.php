@@ -1,3 +1,5 @@
 <?php
-    echo "Ehllo word con ajax";
+    if(isset($_POST)){
+        echo $_POST['username'];
+    }
 ?>

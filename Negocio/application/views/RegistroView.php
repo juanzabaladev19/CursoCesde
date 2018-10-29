@@ -1,9 +1,10 @@
+
 <section>
     <div class="container contenedor-registro">
         <div class="registro">
             <img class="img-responsive logo-registro" src="<?php echo base_url();?>assets/img/registro.png" alt="">
         </div>
-        <form class="my-5" action="<?php echo base_url();?>/Registro/InsertUser" method="post" onsubmit="return datosUser();">
+        <form class="my-5" id="registro-form">
             <div class="row">
                 <div class="col">
                     <div class="form-group">
@@ -83,5 +84,17 @@
 
             <input type="submit" class="btn btn-primary btn-enviar" value="Completar Registro">
         </form>
+        <table class="table table-bordered table-sm">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+            </thead>
+            <tbody id="tasks">
+
+            </tbody>
+        </table>
     </div>
 </section>

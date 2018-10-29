@@ -16,7 +16,7 @@ class RegistroModel extends CI_Model{
     
     public function GetUser(){
        
-        $query = $this->db->query("SELECT * FROM usuarios WHERE id=6");
+        $query = $this->db->query("SELECT * FROM usuarios");
         if($query->num_rows()>0){
             return $query->result();
         }

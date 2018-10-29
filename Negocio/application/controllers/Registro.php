@@ -8,17 +8,26 @@ class Registro extends CI_Controller{
         $datos = $_POST;
         //var_dump($datos);
         $this->RegistroModel->InsertUser($datos);
-        $this->load->view("layout/HeaderView");
+        /*$this->load->view("layout/HeaderView");
         $this->load->view("RegistroView");
-        $this->load->view("layout/FooterView");
+        $this->load->view("layout/FooterView");*/
     }
     
     public function GetUser(){
-        $datos['usuarios'] = $this->RegistroModel->GetUser();
-        $this->load->view("layout/HeaderView");
-        $this->load->view("UsersView",$datos);
-        $this->load->view("layout/FooterView");
+        $datos = $this->RegistroModel->GetUser();
+        $json = array();
+        foreach($datos as $dato){
+            $json[] = array(
+                'id' => $dato->id,
+                'nombre' => $dato->nombre,
+                'apellido' => $dato->apellido,
+                'ciudad' => $dato->ciudad
+            );
+        }
+        $jsonstring = json_encode($json);
+        echo $jsonstring;
     }
+    
     
     public function UpdateUser(){
         $this->RegistroModel->UpdateUser();
